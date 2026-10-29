@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadbir haqida va Chipta buyurtma qilish</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎫 Chipta Buyurtma Qilish</h1>
+            <a href="index.html" class="back-link">← Asosiy sahifaga qaytish</a>
+        </div>
+    </header>
+
+    <main class="container page-details">
+        <!-- Tadbir ma'lumoti -->
+        <section class="event-details">
+            <h2>Simfonik Orkestr Konserti</h2>
+            <div class="info-group">
+                <p><strong>Sana va vaqt:</strong> 15-Noyabr, 2026-yil | 18:30</p>
+                <p><strong>O'tkazilish joyi:</strong> Alisher Navoiy nomidagi teatr</p>
+                <p><strong>Narxi:</strong> 50 000 so'm / chipta</p>
+            </div>
+            <p class="full-desc">
+                Sizni va yaqinlaringizni unutilmas musiqiy kechaga taklif etamiz. Ushbu konsert dasturida dunyoga mashhur kompozitorlar va milliy san'atimiz durdonalari ijro etiladi.
+            </p>
+        </section>
+
+        <!-- Buyurtma berish formasi -->
+        <section class="booking-form-section">
+            <h3>Chiptani band qilish</h3>
+            <form action="#" method="POST" class="booking-form">
+                <div class="form-group">
+                    <label for="fullname">F.I.SH. (Ism va Familiyangiz):</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ism Familiya" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tickets">Chiptalar soni:</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sector">Sektor / Qator:</label>
+                    <select id="sector" name="sector">
+                        <option value="vip">VIP Sektor (100 000 so'm)</option>
+                        <option value="standard" selected>Standard Sektor (50 000 so'm)</option>
+                        <option value="balcony">Balkon (30 000 so'm)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Chiptani Tasdiqlash va Buyurtma Qilish</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Shahar Tadbirlari Afishasi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+</body>
+</html>
