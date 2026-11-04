@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadbir Tafsilotlari va Jadval</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <header>
+        <div class="container nav-container">
+            <h1>🎫 Tadbir Tafsilotlari</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Bosh sahifa</a></li>
+                    <li><a href="batafsil.html">Tadbirlar & Jadval</a></li>
+                    <li><a href="aloqa.html">Chipta Buyurtma</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="event-details">
+            <h2>Simfonik Orkestr Konserti Dasturi</h2>
+            <div class="info-group">
+                <p><strong>Sana va vaqt:</strong> 15-Noyabr, 2026-yil | 18:30</p>
+                <p><strong>O'tkazilish joyi:</strong> Alisher Navoiy nomidagi teatr</p>
+                <p><strong>Narxi:</strong> 50 000 so'mdan boshlab</p>
+            </div>
+            <p class="full-desc">
+                Sizni va yaqinlaringizni unutilmas musiqiy kechaga taklif etamiz. Ushbu konsert dasturida dunyoga mashhur kompozitorlar va milliy san'atimiz durdonalari jonli ijroda taqdim etiladi.
+            </p>
+
+            <!-- A3, A4, A5 talablari: Jadval (5 qator, 3 ustun, colspan, rowspan) -->
+            <h3 style="margin-top: 25px;">Chiptalar turlari va narxlari jadvali</h3>
+            <table class="event-table">
+                <thead>
+                    <tr>
+                        <th>Sektor Nomi</th>
+                        <th>Joylashuvi</th>
+                        <th>Narxi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VIP Sektor</td>
+                        <td rowspan="2">Sahna oldi qismi</td>
+                        <td>100 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>Business Sektor</td>
+                        <td>80 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Sektor</td>
+                        <td>Markaziy qatorlar</td>
+                        <td>50 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>Balkon</td>
+                        <td>Yuqori qavat</td>
+                        <td>30 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Barcha sektorlar uchun umumiy chegirma (Talabalar va pensionerlarga)</strong></td>
+                        <td><strong>-20%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- A10, A11 talablari: Media (Figure + figcaption va Google Maps Iframe) -->
+            <div class="media-section">
+                <h3>Teatr ko'rinishi va joylashuvi</h3>
+                <div class="media-grid">
+                    <figure>
+                        <img src="https://picsum.photos/300/200?random=1" alt="Alisher Navoiy teatri binosining tashqi ko'rinishi">
+                        <figcaption>Teatr binosi</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/300/200?random=2" alt="Simfonik orkestr sahnada chiqish vaqtida">
+                        <figcaption>Konsert zali</figcaption>
+                    </figure>
+                </div>
+                <div class="map-container">
+                    <iframe title="Alisher Navoiy teatri joylashgan manzil xaritasi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3606774127265!2d69.26871147648937!3d41.31115590050856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc3755555%3A0xc17637f5d5bba640!2sAlisher%20Navoi%20State%20Academic%20Theatre%20of%20The%20Opera%20and%20Ballet!5e0!3m2!1sen!2suz!4v1700000000000!5m2!1sen!2suz" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <a href="aloqa.html" class="btn">Chipta Buyurtma Berishga o'tish</a>
+            </div>
+        </section>
+    </main>
+
+    <a href="#top" class="scrollToTop">↑</a>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Shahar Tadbirlari Afishasi</h4>
+                <p>Madaniy hayotimizning eng so'nggi yangiliklari va chiptalar savdosi.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tezkor havolalar</h4>
+                <p><a href="index.html" style="color: #94a3b8; text-decoration: none;">Bosh sahifa</a></p>
+                <p><a href="aloqa.html" style="color: #94a3b8; text-decoration: none;">Buyurtma berish</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shahar Tadbirlari Afishasi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipta Buyurtma Qilish - Forma</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <header>
+        <div class="container nav-container">
+            <h1>🎫 Chipta Buyurtma Qilish</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Bosh sahifa</a></li>
+                    <li><a href="batafsil.html">Tadbirlar & Jadval</a></li>
+                    <li><a href="aloqa.html">Chipta Buyurtma</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="booking-form-section" style="max-width: 700px; margin: 0 auto;">
+            <h3>Chiptani band qilish formasi</h3>
+            
+            <!-- A6, A7, A8, A9 talablari: method="post", kamida 8 ta maydon, required, pattern, fieldset -->
+            <form action="#" method="POST" class="booking-form">
+                
+                <!-- 1-maydon -->
+                <div class="form-group">
+                    <label for="fullname">F.I.SH. (Ism va Familiyangiz):</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ism Familiya" required>
+                </div>
+
+                <!-- 2-maydon -->
+                <div class="form-group">
+                    <label for="email">Elektron pochta (Email):</label>
+                    <input type="email" id="email" name="email" placeholder="orali@example.com" required>
+                </div>
+
+                <!-- 3-maydon (Pattern bilan) -->
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz (+998XXXXXXXXX):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+998901234567" pattern="\+998[0-9]{9}" required>
+                </div>
+
+                <!-- 4-maydon -->
+                <div class="form-group">
+                    <label for="eventdate">Tadbir sanasini tanlang:</label>
+                    <input type="date" id="eventdate" name="eventdate" required>
+                </div>
+
+                <!-- 5-maydon -->
+                <div class="form-group">
+                    <label for="tickets">Chiptalar soni (1 dan 10 gacha):</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10" value="1">
+                </div>
+
+                <!-- 6-maydon (Select) -->
+                <div class="form-group">
+                    <label for="sector">Sektor / O'rin turi:</label>
+                    <select id="sector" name="sector">
+                        <option value="vip">VIP Sektor (100 000 so'm)</option>
+                        <option value="standard" selected>Standard Sektor (50 000 so'm)</option>
+                        <option value="balcony">Balkon (30 000 so'm)</option>
+                    </select>
+                </div>
+
+                <!-- 7-maydon (Radio guruh fieldset + legend ichida) -->
+                <fieldset>
+                    <legend>To'lov turi</legend>
+                    <div class="form-group" style="flex-direction: row; gap: 10px; align-items: center;">
+                        <input type="radio" id="pay_card" name="payment" value="card" checked>
+                        <label for="pay_card" style="font-weight: normal; margin-bottom: 0;">Plastik karta (Uzcard/Humo)</label>
+                    </div>
+                    <div class="form-group" style="flex-direction: row; gap: 10px; align-items: center; margin-bottom: 0;">
+                        <input type="radio" id="pay_cash" name="payment" value="cash">
+                        <label for="pay_cash" style="font-weight: normal; margin-bottom: 0;">Naqd pul (Kassada)</label>
+                    </div>
+                </fieldset>
+
+                <!-- 8-maydon (Checkbox va Textarea qo'shimcha) -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="rules" name="rules" required>
+                    <label for="rules" style="font-weight: normal; margin-bottom: 0;">Sayt qoidalari va shartlariga roziman</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Qo'shimcha istaklar yoki savollar:</label>
+                    <textarea id="comment" name="comment" rows="3" placeholder="Izoh yozing..."></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Chiptani Tasdiqlash va Buyurtma Qilish</button>
+            </form>
+        </section>
+    </main>
+
+    <a href="#top" class="scrollToTop">↑</a>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Shahar Tadbirlari Afishasi</h4>
+                <p>Buyurtmalaringiz tezkor qabul qilinadi va tasdiqlanadi.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Bog'lanish</h4>
+                <p>Qo'llab-quvvatlash xizmati: 24/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shahar Tadbirlari Afishasi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+</body>
+</html>
